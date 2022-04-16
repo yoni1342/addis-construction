@@ -5,9 +5,10 @@ import Banner from '../components/Banner'
 import Works from '../components/Works'
 import MiniBanner from '../components/MiniBanner';
 import Testimony from '../components/Testimony'
+import Footer from '../components/Footer'
 const Home: NextPage = () => {
   return (
-    <div className="overflow-x-hidden">
+    <div className=" relative overflow-x-hidden dark:bg-gray-900">
       <Head>
         <title>Addis Construction</title>
         <link rel="icon" href="/favicon.ico" />
@@ -19,6 +20,8 @@ const Home: NextPage = () => {
       <Works />
       <MiniBanner />
       <Testimony />
+      <Footer />
+     
     </div>
   )
 }

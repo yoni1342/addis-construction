@@ -1,8 +1,7 @@
 import React from 'react'
-import { Carousel }from 'react-responsive-carousel'
 export default function Banner() {
   return (
-    <div>
+    <div className = 'relative dark:bg-gray-800'>
         <div id="carouselExampleControls" className="relative carousel slide clip-your-needful-style" data-bs-ride="carousel">
             <div  className ='absolute top-0 bg-gradient-to-br from-[#4ecca23f] to-[#2ec895dc] w-screen h-screen z-10 flex justify-start items-center '>
             <img src="./logo.png" alt="" className = 'cursor-pointer w-96 ml-40' />
@@ -26,6 +25,10 @@ export default function Banner() {
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Next</span>
             </button>
+        </div>
+        <div className = 'w-[40rem] absolute xl:top-[70%] xl:left-[60%] bg-gradient-to-br from-green-800 to-green-300 p-2 hidden lg:inline-block lg:top-[40%] lg:left-[34%]'>
+            <video src="./vid.mp4" autoPlay controls muted></video>
+            
         </div>
     </div>
   )
